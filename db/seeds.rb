@@ -52,10 +52,10 @@ ShoppingCart.create(
 #     user_id: 2,   
 # )
 
-# ShoppingCartItem.create(
-#     shopping_cart_id: 1,
-#     item_id: 1  
-# )
+ShoppingCartItem.create(
+    shopping_cart_id: 1,
+    item_id: 1  
+)
 # ShoppingCartItem.create(
 #     shopping_cart_id: 1,
 #     item_id: 2  
