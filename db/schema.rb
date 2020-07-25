@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_25_210500) do
+ActiveRecord::Schema.define(version: 2020_07_25_220306) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,15 +27,27 @@ ActiveRecord::Schema.define(version: 2020_07_25_210500) do
     t.index ["user_id"], name: "index_items_on_user_id"
   end
 
+  create_table "offers", force: :cascade do |t|
+    t.integer "amount"
+    t.bigint "item_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["item_id"], name: "index_offers_on_item_id"
+    t.index ["user_id"], name: "index_offers_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "password_digest"
     t.string "email"
-    t.integer "phone"
+    t.bigint "phone"
     t.string "profileImage"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "items", "users"
+  add_foreign_key "offers", "items"
+  add_foreign_key "offers", "users"
 end

@@ -78,12 +78,12 @@ imgUrl: 'https://www.berluti.com/dw/image/v2/BBMR_PRD/on/demandware.static/-/Sit
 # )
 
 
-# Offer.create(
-#     user_id: 1,
-#     item_id: 1,
-#     amount: 500
+Offer.create(
+    user_id: 1,
+    item_id: 1,
+    amount: 500
 
-# )
+)
 # Offer.create(
 #     user_id: 2,
 #     item_id: 2,
