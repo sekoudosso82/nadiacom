@@ -15,16 +15,14 @@ User.create(username: 'Sekou', password: 'Sekou',
 #     profileImage:'https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12741994_10204184836740680_3136464450791401203_n.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=mDboreBE-gEAX-bcNbx&_nc_ht=scontent-lga3-1.xx&oh=d6c8fe5c33811cfd90046b2a97e35acd&oe=5EC73AA5')
 
 
-# Item.create(
-# user_id: 1,
-# title: 'berluti',
-# price: 1000,
-# location: 'NYC',
-# condition: 'used',
-# category: 'shoes',
-# offer: false,
-# imgUrl: 'https://www.berluti.com/dw/image/v2/BBMR_PRD/on/demandware.static/-/Sites-masterCatalog_Berluti/default/dwb1785f22/images/S3873-018_fast-track-torino-alligator-leather-sneaker_nero_berluti_01.jpg?sw=2000&sfrm=jpg'
-# )
+Item.create(
+user_id: 1,
+title: 'berluti',
+price: 1000,
+category: 'shoes',
+offer: false,
+imgUrl: 'https://www.berluti.com/dw/image/v2/BBMR_PRD/on/demandware.static/-/Sites-masterCatalog_Berluti/default/dwb1785f22/images/S3873-018_fast-track-torino-alligator-leather-sneaker_nero_berluti_01.jpg?sw=2000&sfrm=jpg'
+)
 # Item.create(
 # user_id: 1,
 # title: 'JM Weston',
