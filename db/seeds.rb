@@ -45,9 +45,9 @@ imgUrl: 'https://www.berluti.com/dw/image/v2/BBMR_PRD/on/demandware.static/-/Sit
 # imgUrl: 'https://thumbor-gc.tomandco.uk/unsafe/trim/1154x769/center/middle/smart/filters:upscale():fill(white):sharpen(0)/https://www.johnlobb.com/static/media/catalog/product/c/h/chapel_black_museum_calf__de_ail.jpg'
 # )
 
-# ShoppingCart.create(
-#     user_id: 1, 
-# )
+ShoppingCart.create(
+    user_id: 1, 
+)
 # ShoppingCart.create(
 #     user_id: 2,   
 # )
